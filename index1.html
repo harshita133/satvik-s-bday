@@ -1,0 +1,63 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="prefixfree.js"></script>
+  </head>
+
+  <body>
+  
+    <div id="outside">
+    
+      <p id="outside-title">
+        Happy Birthday!
+      </p>
+
+      <img id="outside-pic" src="robot.png">
+
+      <p>
+        <button onclick="open_card()">Click to open</button>
+      </p>
+
+    </div>
+  
+    <div id="inside">
+    
+      <p id="inside-title">
+        Happy Birthday!
+      </p>
+      
+      <img id="inside-pic" src="girl.png">
+      
+      <p id="message">
+        I love you most in this world. You wil always be my mota. Wish you HAPPY 19th BIRTHDAY SAVU.
+      </p>
+
+      <p>
+        <button onclick="playVid()" type="button">Click to see your well wishers</button>
+        <br>
+        <video id="myVideo" width="320" height="176">
+  <source src="freinds.mp4" type="video/mp4">
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+</script> 
+      </p>
+      
+
+
+
+
+
+    </div>
+    
+  </body>
+  
+</html>
