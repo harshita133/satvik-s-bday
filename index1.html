@@ -4,6 +4,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="prefixfree.js"></script>
+    <style>
+    #myVideo{
+      background-image: linear-gradient(to right, lightblue,darkblue);
+      margin:30px;
+      padding: 10px;
+      font-size: 18px;
+      color:white;
+text-align: center;
+    }
+    #myVideo:hover{
+font-style: italic;
+font-size: 25px;
+margin:50px;  
+color:black; 
+border-radius:  15%;}
+    </style>
+  
   </head>
 
   <body>
@@ -37,15 +54,22 @@
       <p>
         <button onclick="playVid()" type="button">Click to see your well wishers</button>
         <br>
-        <video id="myVideo" width="320" height="176">
-  <source src="sample.mp4" type="video/mp4">
-</video>
+        <div id="myVideo" style="display:none">
+       Itni jaldi khan, phele aapka ek test liya jaayega.
+        It will not be a difficult test, <br>there will be few questions and you can only see the wishes after giving the right answers 
+      <i style="color:yellow">(English to show off) </i>
+
+
+      <br>
+      <br>
+      <button ><a href="first.html">Click here to continue</a></button>
+      </div>
 
 <script> 
 var vid = document.getElementById("myVideo"); 
 
 function playVid() { 
-  vid.play(); 
+  vid.style.display="block"; 
 } 
 
 </script> 
