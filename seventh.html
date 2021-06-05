@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+      $(()=>{
+        $("#myButton"). click(function (e) {
+    if($('#weight').val()=="ritu aunty")
+    {
+        var vid = document.getElementById("myVideo"); 
+        var agla = document.getElementById("agla"); 
+        vid.style.display='block';
+        agla.style.display='block';
+      
+
+      
+
+        vid.play(); 
+        // window.location.replace("/in");
+    }
+    else 
+    alert("arey itna mat soch, yeh easy wala h, bas bhaiya lagade");
+    
+  }
+  )
+      })
+  
+  </script>
+    <title>Document</title>
+</head>
+<body class="container" style="background-color:lightpink">
+    <h3>chalo open heart surgery wale aa jayo</h3>
+    <br>
+<h5>
+    Okay, Guess the person who will wish you
+    <br>
+    
+    <input type="text" name="weight" id="weight"  placeholder="tereko sabse late wish karne wala draamebaaz bhaiya" style="width:500px">
+    <input type="submit" id="myButton" class="btn btn-primary" >
+    <a href="six.html" id="agla" style="text-align: center;border-radius: 5%; display:none;width:200px;background-image:linear-gradient(to right,orange,red)">Go to next wish</a> 
+</h5>
+
+
+<video id="myVideo" width="1000" height="500" style="display:none">
+    <source src="ritu.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
