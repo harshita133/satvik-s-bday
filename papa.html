@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+      $(()=>{
+        $("#myButton"). click(function (e) {
+    if($('#weight').val()=="paapaa")
+    {
+        var vid = document.getElementById("myVideo"); 
+        vid.style.display='block';
+        vid.play(); 
+        // window.location.replace("/in");
+    }
+    else 
+    alert("Motu, itni jaldi kaise dikhade, sare vowel double karde");
+    
+  }
+  )
+      })
+  
+  </script>
+    <title>Document</title>
+</head>
+<body class="container" style="background-color:lightpink">
+    <h3>Doosra question pesh kiya jaaye</h3>
+    <br>
+<h5>
+    Okay, Guess the person who will wish you
+    <br>
+    
+    <input type="text" name="weight" id="weight"  placeholder="savu, scooty araam se chalani h helmet pehnke" style="width:500px">
+    <input type="submit" id="myButton" class="btn btn-primary" >
+    
+</h5>
+
+
+<video id="myVideo" width="1000" height="500" style="display:none">
+    <source src="papa.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
