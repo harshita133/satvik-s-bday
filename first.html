@@ -35,10 +35,10 @@
   margin: 0;
   
 }
-
+/* 
 * {
   box-sizing: border-box;
-}
+} */
   .bg-image {
   /* The image used */
   background-image: url('3.jpeg');
@@ -46,9 +46,10 @@
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
-  
+  border:yellow 5px ridge;
   /* Full height */
   height: 100%; 
+  border-radius:5%; 
   
   /* Center and scale the image nicely */
   background-position: center;
@@ -56,6 +57,8 @@
   background-size: cover;
 }
 .bg-text {
+  border:yellow 5px ridge;
+border-radius:5%; 
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -74,7 +77,7 @@
 </style>
     <title>Document</title>
 </head>
-<body class="container-fluid" style="">
+<body class="container-fluid" style="background-color:rgb(161, 177, 212)">
     <div class="bg-image"></div>
     <br><br><br>
 <div class="bg-text">
@@ -100,7 +103,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div> 
-      <br><br><br><br><br><br>  
+      <br><br><br>
     
     <br>
 <h5>
